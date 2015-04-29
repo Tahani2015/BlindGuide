@@ -102,18 +102,18 @@ while(1){
   Serial.println(angle);
   
   if(checkMode(COMPASS)) break;
-  if(angle<10||angle>350){
+  if(angle<20||angle>340){
     analogWrite(9,200);
   }
   else if(angle<175){
     if(checkMode(COMPASS)) break;
-    analogWrite(9,180-angle);
+    analogWrite(9,256-angle);
     delay(80);
     if(checkMode(COMPASS)) break;
     analogWrite(9,0);
     delay(80);
     if(checkMode(COMPASS)) break;
-    analogWrite(9,180-angle);
+    analogWrite(9,256-angle);
     delay(80);
     if(checkMode(COMPASS)) break;
     analogWrite(9,0);
@@ -121,7 +121,7 @@ while(1){
     if(checkMode(COMPASS)) break;
   }
   else if(angle>185){
-    analogWrite(9,angle-180);
+    analogWrite(9,angle-105);
     if(checkMode(COMPASS)) break;
     delay(80);
     if(checkMode(COMPASS)) break;
