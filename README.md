@@ -11,4 +11,4 @@ the required direction.
 It contains three different operating modes; safety mode to detect the obstacles and give the flashing light, compass 
 mode to guide the user to the main directions and the off mode.
 
-This project been performed as the group project for Physical Computing coures taught by Prof. Shaun Kane at CU-Boulder
+This project has been performed as the group project for Physical Computing coures taught by Prof. Shaun Kane at CU-Boulder
